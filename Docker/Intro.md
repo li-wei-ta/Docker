@@ -2,7 +2,7 @@
 
 - Launched an ec2 instance and downloaded docker on that ec2 instance
 - Containerized a simple python application by building a docker image for the python app
-- pushed and pulled it from personal docker registry
+- Pushed and pulled image from personal docker registry account
 
 # What is a container?
 
