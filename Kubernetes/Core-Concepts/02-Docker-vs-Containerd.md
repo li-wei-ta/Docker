@@ -3,10 +3,10 @@
 ### Docker
 
 - Initially Docker was used as the main container runtime by Kubernetes
-- However it Docker was more of a monolithic application
+- However Docker was more of a monolithic application
 - It had a lot of non-essential features that was not required to just run an application (such as image building, docker deamon, etc)
 - Additionally, as Kubernetes gained popularity they introduced CRI (Container runtime interface), to make all container platform runtime compatible with kubernetes
-- However, Docker didn't really directly comform to these standards that's where Containerd came in
+- However, Docker didn't completely conform to these standards that's where Containerd came in
 
 ### Containerd
 
