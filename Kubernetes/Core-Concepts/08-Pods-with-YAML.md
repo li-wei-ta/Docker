@@ -5,7 +5,7 @@
   - `apiVersion` (string) -> Defines the version of the api server
   - `kind` (string) -> The type of project that we are trying to create (Pod, Service, ReplicaSet, Deployment)
   - `metadata`(dictionary) -> data about the object (like tags to help grouping the pods together -> frontend) and can have any custom key value pair the user want to put
-  - `spec` (list) ->
+  - `spec` (list) -> list of object specification (container)
 - **pod-definition.yml** example:
 
 ```yaml
@@ -26,3 +26,7 @@ spec:
   - `kubectl create -f pod-definition.yml`
 - Getting description of the pod
   - `kubectl describe pod myapp-pod`
+- **Important** - In the exam use **dry run** to generate a basic yaml file
+  - `kubectl run nginx --image=nginx --dry-run=client -oyaml > pod.yaml`
+  - `vi pod.yaml`
+  - `kubectl create -f pod.yaml`
