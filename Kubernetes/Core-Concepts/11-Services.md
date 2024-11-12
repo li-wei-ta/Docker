@@ -44,3 +44,8 @@
 #### Service Load Balancer
 
 ![alt text](./images/image_9.png)
+
+#### Commands
+
+- Create a service named redis-service to type ClusterIP to expose pod redis on port 6379
+  - `k expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml`
