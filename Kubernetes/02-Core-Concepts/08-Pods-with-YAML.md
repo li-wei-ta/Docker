@@ -26,6 +26,8 @@ spec:
   - `kubectl create -f pod-definition.yml`
 - Getting description of the pod
   - `kubectl describe pod myapp-pod`
+- **Remember** - Pods are **immutable** therefore to make changes to the pod you must recreate it, to do it imperatively is as follows:
+  - `k replace -force -f <config file>`
 - **Important** - In the exam use **dry run** to generate a basic yaml file
   - `kubectl run nginx --image=nginx --dry-run=client -oyaml > pod.yaml`
   - `vi pod.yaml`
